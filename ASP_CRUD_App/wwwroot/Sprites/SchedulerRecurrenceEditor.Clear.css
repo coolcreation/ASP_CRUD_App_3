@@ -1,0 +1,68 @@
+.RecurrenceEditor_Clear
+{
+	color: #333;
+	font: normal 12px/14px "Segoe UI", Arial, sans-serif;
+}
+
+/* <xref input skins> */
+
+.RecurrenceEditor_Clear .rsAdvInput,
+.RecurrenceEditor_Clear select
+{
+	border-color: #bbb99d;
+}
+
+.RecurrenceEditor_Clear .rsInvalid input,
+.RecurrenceEditor_Clear .rsAdvTimePicker .riEmpty
+{
+	background-image: url('Input/sprite.gif');
+}
+
+.RecurrenceEditor_Clear .rsInvalid
+{
+	border-color: #e92600;
+	color: #e92600;
+}
+/* </xref input skins> */
+
+.RecurrenceEditor_Clear h2,
+.RecurrenceEditor_Clear h3
+{
+	color: #279500;
+}
+
+.RecurrenceEditor_Clear h2
+{
+	border-bottom: 1px solid #bbb99d;
+}
+
+.RecurrenceEditor_Clear h2 span
+{
+	background: #ececd8;
+}
+
+.RecurrenceEditor_Clear .rsAdvRecurrenceFreq
+{
+	border-right: 1px solid #fff;
+}
+
+.RecurrenceEditor_Clear ul.rsRecurrenceOptionList   /* ??? */
+{
+	border-right: 1px solid #bbb99d;
+}
+
+.RecurrenceEditor_Clear div.rsAdvPatternPanel
+{
+	border-left: 0;
+}
+
+/* <date/time picker> */
+
+.RecurrenceEditor_Clear .rsTimePick .RadInput_Clear input.riEnabled,
+.RecurrenceEditor_Clear .rsTimePick .RadInput_Clear input.riHover,
+.RecurrenceEditor_Clear .rsTimePick .RadInput_Clear input.riFocused
+{
+	background-image: url('Scheduler/rsSprites.png');
+}
+
+/* </date/time picker> */

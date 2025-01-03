@@ -1,0 +1,103 @@
+﻿/*Telerik RadDataPager Clear Skin*/
+
+.RadDataPager_Clear
+{
+	border:1px solid #828282;
+	background:#e6e9eb;
+	color:#0f232f;
+}
+
+.RadDataPager_Clear .rdpInfoPart
+{
+	color:#2f434f;
+}
+
+.RadDataPager_Clear .rdpInfoPart strong
+{
+	color:#0f232f;
+}
+
+.RadDataPager_Clear .rdpPageFirst,
+.RadDataPager_Clear .rdpPagePrev,
+.RadDataPager_Clear .rdpPageNext,
+.RadDataPager_Clear .rdpPageLast
+{
+	background:transparent no-repeat url('Grid/sprite.gif');
+}
+
+.RadDataPager_Clear .rdpPageFirst
+{
+	background-position:0 -550px;
+}
+.RadDataPager_Clear .rdpPageFirst:hover
+{
+	background-position:0 -600px;
+}
+.RadDataPager_Clear .rdpPagePrev
+{
+	background-position:0 -700px;
+}
+.RadDataPager_Clear .rdpPagePrev:hover
+{
+	background-position:0 -750px;
+}
+.RadDataPager_Clear .rdpPageNext
+{
+	background-position:0 -850px;
+}
+.RadDataPager_Clear .rdpPageNext:hover
+{
+	background-position:0 -900px;
+}
+.RadDataPager_Clear .rdpPageLast
+{
+	background-position:0 -1000px;
+}
+.RadDataPager_Clear .rdpPageLast:hover
+{
+	background-position:0 -1050px;
+}
+
+.RadDataPager_Clear .rdpPagerButton
+{
+	border:1px solid;
+	border-color:#5f8693 #8e989e #54636b #668c98;
+	background:#e6e9eb repeat-x 0 -1550px url('Grid/sprite.gif');
+	color:#0f232f;
+	font:12px/12px "segoe ui",arial,sans-serif;
+}
+
+.RadDataPager_Clear .rdpNumPart a:hover,
+.RadDataPager_Clear .rdpNumPart a:hover span,
+.RadDataPager_Clear .rdpNumPart a.rdpCurrentPage,
+.RadDataPager_Clear .rdpNumPart a.rdpCurrentPage span
+{
+	background:no-repeat url('Grid/sprite.gif');
+}
+
+.RadDataPager_Clear .rdpNumPart a
+{
+	color:#0f232f;
+}
+
+.RadDataPager_Clear .rdpNumPart a:hover
+{
+	background-position:100% -1250px;
+}
+
+.RadDataPager_Clear .rdpNumPart a:hover span
+{
+	background-position:0 -1150px;
+}
+
+.RadDataPager_Clear .rdpNumPart a.rdpCurrentPage,
+.RadDataPager_Clear .rdpNumPart a.rdpCurrentPage:hover
+{
+	background-position:100% -1450px;
+}
+
+.RadDataPager_Clear .rdpNumPart a.rdpCurrentPage span,
+.RadDataPager_Clear .rdpNumPart a.rdpCurrentPage:hover span
+{
+	background-position:0 -1350px;
+}

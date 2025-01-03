@@ -1,0 +1,18 @@
+﻿/* Telerik RadAjaxLoadingPanel Clear Skin */
+
+.RadAjax_Clear .raDiv
+{
+	background-image:url('Common/loading.gif');
+}
+
+.RadAjax_Clear .raColor
+{
+	background-color:#fff;
+}
+
+.RadAjax_Clear .raTransp
+{
+	opacity:0.7;
+	-moz-opacity:0.7;
+	filter:alpha(opacity=70);
+}

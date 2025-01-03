@@ -1,0 +1,41 @@
+.RadDock_Clear .rdMiddle .rdLeft,
+.RadDock_Clear .rdMiddle .rdRight
+{
+	background-image: url(Dock/VerticalSprite.gif);
+}
+
+.RadDock_Clear .rdTop .rdLeft,
+.RadDock_Clear .rdTop .rdRight,
+.RadDock_Clear .rdTop .rdCenter,
+.RadDock_Clear .rdBottom .rdLeft,
+.RadDock_Clear .rdBottom .rdRight,
+.RadDock_Clear .rdBottom .rdCenter
+{
+	background-image: url(Dock/HorizontalSprite.gif);
+}
+
+.RadDock_Clear .rdCenter .rdCommands a span
+{
+	background-image: url(Dock/CommandSprite.png);
+}
+
+*html .RadDock_Clear .rdCenter .rdCommands a span
+{
+	background-image: url(Dock/CommandSprite.gif);
+}
+
+.RadDock_Clear .rdMiddle .rdCenter,
+.RadDock_Clear .rdBottom .rdCenter
+{
+	background-color: #f9fafb;
+}
+
+.RadDock_Clear .rdContent
+{
+	color: #000;
+}
+
+.RadDock_Clear .rdTitleBar em
+{
+	color: #000;
+}

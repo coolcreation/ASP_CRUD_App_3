@@ -1,0 +1,13 @@
+/* RadRating for ASP.NET AJAX Default Skin */
+
+.RadRating_Clear a,
+.RadRating_Clear a span
+{
+	background-image: url(Rating/Sprite.png);
+}
+
+* html .RadRating_Clear a,
+* html .RadRating_Clear a span
+{
+	background-image: url(Rating/Sprite.gif);
+}

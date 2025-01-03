@@ -1,0 +1,145 @@
+﻿/*Telerik RadInput Clear Skin*/
+
+/*global*/
+
+.RadInput_Clear,
+.RadInputMgr_Clear
+{
+	font:12px "segoe ui",arial,sans-serif;
+}
+
+/*textbox states*/
+
+html body .RadInput_Clear .riTextBox,
+html body .RadInputMgr_Clear
+{
+	border-color:#abadb3 #dbdfe6 #e3e9ef #e2e3ea;
+	background:#fff;
+	color:#0f232f;
+	font:12px "segoe ui",arial,sans-serif;
+}
+
+html body .RadInput_Clear .riEmpty,
+html body .RadInput_Empty_Clear
+{
+	color:#97a6ab;
+}
+
+html body .RadInput_Clear .riHover,
+html body .RadInput_Hover_Clear,
+html body .RadInput_Clear .riFocused,
+html body .RadInput_Focused_Clear
+{
+	border-color:#a0a4aa #cdd3da #d5dce3 #d4d7de;
+	background-color:#eff1f2;
+}
+
+html body .RadInput_Clear .riRead,
+html body .RadInput_Read_Clear
+{
+	border-color:#d5dce3;
+	background-color:#f3f6f8;
+}
+
+html body .RadInput_Clear .riDisabled,
+html body .RadInput_Disabled_Clear
+{
+	border-color:#d5dce3;
+	background-color:#f3f6f8;
+	color:#97a6ab;
+	cursor:default;
+}
+
+html body .RadInput_Clear .riError,
+html body .RadInput_Error_Clear
+{
+	border-color:#9e1415 #cb191b #d21a1c #d11a1c;
+	background:#ec1d1e 100% -298px no-repeat url('Input/sprite.gif');
+	color:#fff;
+}
+
+.RadForm.rfdTextbox .RadInput_Clear .riError[type="text"],
+.RadForm.rfdTextbox .RadInput_Error_Clear[type="text"]
+{
+	border-color:#9e1415 #cb191b #d21a1c #d11a1c;
+	background:#ec1d1e 100% -298px no-repeat url('Input/sprite.gif');
+	color:#fff;
+}
+
+html body .RadInput_Clear .riNegative,
+html body .RadInput_Negative_Clear
+{
+	color:#5f737f;
+}
+
+/*buttons*/
+
+.RadInput_Clear a
+{
+	background:transparent no-repeat url('Input/sprite.gif');
+}
+
+/*go*/
+
+.RadInput_Clear .riBtn a
+{
+	width:20px;
+	height:18px;
+	line-height:18px;
+	background-position:3px 6px;
+}
+
+.RadInput_Clear .riBtn a:hover
+{
+	background-position:3px -44px;
+}
+
+/*spin*/
+
+.RadInput_Clear .riSpin a
+{
+	width:15px;
+	height:7px;
+	line-height:7px;
+}
+
+.RadInput_Clear a.riUp
+{
+	background-position:4px -98px;
+}
+
+.RadInput_Clear a.riUp:hover
+{
+	background-position:4px -148px;
+}
+
+.RadInput_Clear a.riDown
+{
+	background-position:4px -199px;
+}
+
+.RadInput_Clear a.riDown:hover
+{
+	background-position:4px -249px;
+}
+
+/*label*/
+
+.RadInput_Clear .riLabel
+{
+	color:#0f232f;
+}
+
+/*rtl*/
+
+html body .RadInputRTL_Clear .riError,
+html body .RadInputRTL_Error_Clear
+{
+	background-position:3px -298px;
+}
+
+.RadForm.rfdTextbox .RadInputRTL_Clear .riError[type="text"],
+.RadForm.rfdTextbox .RadInputRTL_Error_Clear[type="text"]
+{
+	background-position:3px -298px;
+}

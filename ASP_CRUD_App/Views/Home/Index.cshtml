@@ -1,0 +1,37 @@
+﻿@model ASP_CRUD_App.Models.CarCategoryViewModel
+ @*add to github test  *@ 
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="page-content">
+
+    <div class="page-content-header">
+        <a asp-controller="Home" asp-action="AddVehicle" class="btn btn-outline-secondary">Add Vehicle</a>
+        <h1>Available Car Rentals </h1>
+    </div>
+
+    <div class="d-flex flex-wrap gap-4 mx-auto justify-content-around">
+        @foreach (var viewModel in Model.Cars)
+        {
+            <div class="card" style="width: 14rem;">
+
+                <img src="/Images/Thumbs/@viewModel.CarImage" class="card-img-top p-3" alt="..."/>
+
+                <div class="card-body">
+                    <h5 class="card-title">@viewModel.Make @viewModel.Model</h5>
+                    <p>@viewModel.Year <span class="m-sm-2 ">@viewModel.Color</span></p>
+                    <p class="fs-5 text-success">$@viewModel.Price</p>
+                    <a asp-controller="Home" asp-action="ConfirmRental" asp-route-id="@viewModel.CarId" class="btn btn-primary w-100">Rent this Vehicle</a>
+
+                    <div class="d-flex justify-content-center">
+                        <img src="/Images/Categories/@viewModel.Category.ImageName"
+                             class="col-8" alt="@viewModel.Category.CategoryId" />
+                    </div>
+
+                </div>
+            </div>
+        }
+    </div>
+
+</div>

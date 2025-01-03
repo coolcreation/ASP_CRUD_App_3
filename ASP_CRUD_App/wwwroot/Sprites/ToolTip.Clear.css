@@ -1,0 +1,58 @@
+/* RadToolTip Clear Skin */
+
+.RadToolTip_Clear.rtLoading
+{	
+	background: url('<%=WebResource("Telerik.Web.UI.Skins.Default.Common.loading.gif")%>') no-repeat center;
+}
+
+div.RadToolTip_Clear table.rtWrapper td.rtWrapperTopLeft,
+div.RadToolTip_Clear table.rtWrapper td.rtWrapperTopRight,
+div.RadToolTip_Clear table.rtWrapper td.rtWrapperBottomLeft,
+div.RadToolTip_Clear table.rtWrapper td.rtWrapperBottomRight,
+div.RadToolTip_Clear table.rtWrapper td.rtWrapperTopCenter,
+div.RadToolTip_Clear table.rtWrapper td.rtWrapperBottomCenter,
+div.RadToolTip_Clear table.rtShadow td.rtWrapperTopLeft,
+div.RadToolTip_Clear table.rtShadow td.rtWrapperTopRight,
+div.RadToolTip_Clear table.rtShadow td.rtWrapperBottomLeft,
+div.RadToolTip_Clear table.rtShadow td.rtWrapperBottomRight,
+div.RadToolTip_Clear table.rtShadow td.rtWrapperTopCenter,
+div.RadToolTip_Clear table.rtShadow td.rtWrapperBottomCenter,
+div.RadToolTip_Clear a.rtCloseButton
+{
+	background-image: url(ToolTip/ToolTipSprites.png);
+}
+
+div.RadToolTip_Clear table.rtWrapper td.rtWrapperLeftMiddle,
+div.RadToolTip_Clear table.rtWrapper td.rtWrapperRightMiddle,
+div.RadToolTip_Clear table.rtShadow td.rtWrapperLeftMiddle,
+div.RadToolTip_Clear table.rtShadow td.rtWrapperRightMiddle
+{
+	background-image:  url(ToolTip/ToolTipVerticalSprites.png);
+}
+
+div.RadToolTip_Clear table.rtWrapper td.rtWrapperContent
+{
+	background-color: #fbfbfb;
+	color: #666;
+	padding: 10px; /* overrides base style in order to fit Clear skin design */
+}
+
+div.RadToolTip_Clear td.rtWrapperTopCenter div.rtTitlebar
+{	
+	color: #e40000;
+	padding: 5px 0 0 10px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+div.RadToolTip_Clear div.rtCallout
+{
+	background-image: url(ToolTip/Callouts.gif);
+}
+
+div.RadToolTip_Clear table.rtShadow .rtWrapperTopCenter a.rtCloseButton
+{
+	margin-top: 12px;
+	margin-right: 12px;
+}
+

@@ -1,0 +1,88 @@
+.RadTreeView_Clear,
+.RadTreeView_Clear a.rtIn,
+.RadTreeView_Clear .rtEdit .rtIn input
+{
+	color: #0f232f;
+	font: 12px/18px "Segoe UI", Arial, sans-serif;
+}
+
+.RadTreeView_Clear .rtPlus,
+.RadTreeView_Clear .rtMinus
+{
+	background-image: url('TreeView/PlusMinus.png');
+}
+
+.RadTreeView_Clear .rtChecked,
+.RadTreeView_Clear .rtUnchecked,
+.RadTreeView_Clear .rtIndeterminate
+{
+	background-image: url('TreeView/TriState.png');
+}
+
+.RadTreeView_Clear .rtHover span.rtIn
+{
+	color: #FFF;
+	border-color: #f28e8e #8f0e10 #8f0e10 #f28e8e;
+	background-color: #d80306;
+    background-position: 0 0;
+	background-image: url('TreeView/ItemHoveredBg.png');
+}
+
+.RadTreeView_Clear .rtSelected span.rtIn
+{
+    color: #0f232f;
+	border-color: #72818b #d6dbde #d6dbde #72818b;
+	background-color: #e9ecee;
+    background-position: 0 0;
+	background-image: url('TreeView/ItemSelectedBg.png');
+}
+
+.RadTreeView_Clear .rtSelected .rtLoadingBefore,
+.RadTreeView_Clear .rtSelected .rtLoadingAfter,
+.RadTreeView_Clear .rtSelected .rtLoadingBelow
+{
+	color: #333;
+}
+
+.RadTreeView_Clear .rtLoadingIcon
+{
+	background-image: url('TreeView/LoadingIcon.gif');
+}
+
+.RadTreeView_Clear .rtLI .rtEdit .rtIn
+{
+	border-color: #6c6c6c;
+	background: #fff;
+}
+
+.RadTreeView_Clear_disabled .rtIn,
+.RadTreeView_Clear .rtDisabled .rtIn
+{
+	color: #ccc;
+}
+
+
+/* <node lines> */
+
+.RadTreeView_Clear .rtLines .rtLI,
+.RadTreeView_Clear .rtLines .rtFirst .rtUL { background-image: url('../Common/TreeView/NodeSpan.png'); }
+.RadTreeView_Clear_rtl .rtLines .rtLI,
+.RadTreeView_Clear_rtl .rtLines .rtFirst .rtUL { background-image:url('../Common/TreeView/NodeSpan_rtl.png'); }
+
+.RadTreeView_Clear .rtLines .rtFirst,
+.RadTreeView_Clear .rtLines .rtFirst .rtUL { background-image: url('../Common/TreeView/FirstNodeSpan.png'); }
+.RadTreeView_Clear_rtl .rtLines .rtFirst,
+.RadTreeView_Clear_rtl .rtLines .rtFirst .rtUL { background-image: url('../Common/TreeView/FirstNodeSpan_rtl.png'); }
+.RadTreeView_Clear .rtLines .rtLast,
+.RadTreeView_Clear .rtLines .rtLast .rtUL { background-image: none; }
+
+.RadTreeView_Clear .rtLines .rtTop { background-image:url('../Common/TreeView/TopLine.png'); }
+.RadTreeView_Clear_rtl .rtLines .rtTop { background-image:url('../Common/TreeView/TopLine_rtl.png'); }
+.RadTreeView_Clear .rtLines .rtMid { background-image:url('../Common/TreeView/MiddleLine.png'); }
+.RadTreeView_Clear_rtl .rtLines .rtMid { background-image:url('../Common/TreeView/MiddleLine_rtl.png'); }
+.RadTreeView_Clear .rtLines .rtBot { background-image:url('../Common/TreeView/BottomLine.png'); }
+.RadTreeView_Clear_rtl .rtLines .rtBot { background-image: url('../Common/TreeView/BottomLine_rtl.png'); }
+.RadTreeView_Clear .rtLines .rtLast .rtTop { background-image:url('../Common/TreeView/SingleLine.png'); }
+.RadTreeView_Clear_rtl .rtLines .rtLast .rtTop { background-image:url('../Common/TreeView/SingleLine_rtl.png'); }
+
+/* </node lines> */
