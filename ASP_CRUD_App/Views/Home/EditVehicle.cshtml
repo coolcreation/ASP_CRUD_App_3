@@ -1,0 +1,46 @@
+﻿@model ASP_CRUD_App.Models.CarCategoryViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="page-content">
+
+    <div class="page-content-header">
+        <a asp-controller="Home" asp-action="AddVehicle" class="btn btn-outline-secondary">BUTTON</a>
+        <h1>Edit Vehicle Details</h1>
+    </div>
+
+    @*MAKE, MODEL, YEAR, COLOR, PRICE*@
+<form class="bg-white col-11 col-lg-4 mx-auto p-4" asp-controller="Home" asp-action="EditVehicle" method="post">
+    <input type="hidden" asp-for="Car.CarId" />
+
+    <div class="mb-2">
+        <label class="form-label" for="make">Make</label>
+        <input class="form-control" type="text" value="@Model.Car.Make" asp-for="Car.Make" />
+    </div>
+
+    <div class="mb-2">
+        <label class="form-label" for="model">Model</label>
+        <input class="form-control" type="text" value="@Model.Car.Model" asp-for="Car.Model" />
+    </div>
+
+    <div class="mb-2">
+        <label class="form-label" for="year">Year</label>
+        <input class="form-control" type="number" value="@Model.Car.Year" asp-for="Car.Year" />
+    </div>
+
+    <div class="mb-2">
+        <label class="form-label" for="color">Color</label>
+        <input class="form-control" type="text" value="@Model.Car.Color" asp-for="Car.Color" />
+    </div>
+
+    <div class="mb-2">
+        <label class="form-label" for="price">Price</label>
+        <input class="form-control" type="number" value="@Model.Car.Price" asp-for="Car.Price" step="0.01" min="15"/>
+    </div>
+
+    <button class="btn btn-primary w-100 mt-3" type="submit" href="">Apply Changes</button>
+</form>
+
+</div>

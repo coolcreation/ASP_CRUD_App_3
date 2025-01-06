@@ -22,8 +22,8 @@
                     <h5 class="card-title">@viewModel.Make @viewModel.Model</h5>
                     <p>@viewModel.Year <span class="m-sm-2 ">@viewModel.Color</span></p>
                     <p class="fs-5 text-success">$@viewModel.Price</p>
-                    <a asp-controller="Home" asp-action="ConfirmRental" asp-route-id="@viewModel.CarId" class="btn btn-primary w-100">Rent this Vehicle</a>
-
+                    <a asp-controller="Home" asp-action="ConfirmRental" asp-route-id="@viewModel.CarId" class="btn btn-primary w-100 mb-2">Rent this Vehicle</a>
+                    <a asp-controller="Home" asp-action="EditVehicle" asp-route-id="@viewModel.CarId" class="btn btn-info text-white w-100">Edit Vehicle</a>
                     <div class="d-flex justify-content-center">
                         <img src="/Images/Categories/@viewModel.Category.ImageName"
                              class="col-8" alt="@viewModel.Category.CategoryId" />

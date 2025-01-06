@@ -48,6 +48,47 @@ namespace ASP_CRUD_App.Controllers
             return View(viewModel);
         }
 
+        public IActionResult EditVehicle(int id)
+        {
+            var vehicle = context.Cars
+                .FirstOrDefault(c => c.CarId == id);
 
+            if (vehicle == null)
+            { 
+                return NotFound(); // Handle case where vehicle is not found
+            }
+
+            var viewModel = new CarCategoryViewModel
+            {
+                Car = vehicle,
+            };
+
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        public IActionResult EditVehicle(Car car)
+        {
+            var vehicle = context.Cars
+                .FirstOrDefault(c => c.CarId == car.CarId);
+
+            if (vehicle == null)
+            {
+                return NotFound(); // Handle case where vehicle is not found
+            }
+
+            // Update the properties of the vehicle
+            vehicle.Make = car.Make;
+            vehicle.Model = car.Model;
+            vehicle.Year = car.Year;
+            vehicle.Color = car.Color;
+            vehicle.Price = car.Price;
+            // Add other properties as necessary
+
+            // Save changes to the database
+            context.SaveChanges();
+
+            return RedirectToAction("Index", "Home");
+        }
     }
 }
