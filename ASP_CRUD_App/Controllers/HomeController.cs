@@ -1,5 +1,4 @@
 ﻿
-using System.Collections.Generic;
 using System.Linq;
 using ASP_CRUD_App.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -14,19 +13,27 @@ namespace ASP_CRUD_App.Controllers
 
         public HomeController(AppDbContext ctx) => context = ctx;
 
-        public IActionResult Index()
+
+        public IActionResult Index(string sortBy)
         {
             var cars = context.Cars
-                .Include(c => c.Category)
-                .OrderBy(m => m.Make).ToList();
+                .Include(c => c.Category).ToList();
 
             var viewModel = new CarCategoryViewModel
             {
                 Cars = cars
             };
 
-            return View(viewModel);
+            sortBy = string.IsNullOrEmpty(sortBy) ? "Make" : sortBy; // Default sort by "Make"
+            var sortedCars = viewModel.GetSortedCars(sortBy);
+
+            // Replace the Cars list in the ViewModel with the sorted list
+            viewModel.Cars = sortedCars;
+
+            ViewBag.SortName = sortBy.ToUpper();
+            return View(viewModel); 
         }
+
 
         public IActionResult ConfirmRental(int id)
         {
@@ -47,6 +54,7 @@ namespace ASP_CRUD_App.Controllers
 
             return View(viewModel);
         }
+
 
         public IActionResult EditVehicle(int id)
         {

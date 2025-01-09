@@ -38,8 +38,13 @@ body {
     padding: 1rem;
 }
 .page-content-header h1 {
+    min-width: 240px !important;
+    text-align: center;
     margin: 0 !important;
     font-size: 1.5rem;
+}
+.page-content-header .dropdown button {
+    width: 100% !important;
 }
 .page-content-header a {
     font-weight: bold;
@@ -117,7 +122,8 @@ footer {
 /* -------------------------------------------------- */
 
 @media (min-width: 768px) {
-    html {
-        font-size: 16px;
+    .page-content-header .dropdown button, .page-content-header a {
+        min-width: 190px !important;
+        width: 190px !important;
     }
 }

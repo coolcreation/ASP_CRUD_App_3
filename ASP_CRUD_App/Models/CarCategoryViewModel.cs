@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace ASP_CRUD_App.Models
 {
@@ -16,5 +17,19 @@ namespace ASP_CRUD_App.Models
             Cars = new List<Car>();
             Categories = new List<Category>();
         }
+
+        // Method to get sorted cars by a specified property
+        public List<Car> GetSortedCars(string sortBy = "Make")
+        {
+            return sortBy.ToLower() switch
+            {
+                "make" => Cars.OrderBy(c => c.Make).ToList(),
+                "model" => Cars.OrderBy(c => c.Model).ToList(),
+                "year" => Cars.OrderBy(c => c.Year).ToList(),
+                "price" => Cars.OrderBy(c => c.Price).ToList(),
+                _ => Cars // Default to unsorted if an invalid sortBy is provided
+            };
+        }
+
     }
 }
